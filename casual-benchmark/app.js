@@ -13,7 +13,24 @@
   const ref = id => `<a class="source-ref" href="#source-${esc(id)}">[${String(sourceIndex.get(id)?.number ?? '').padStart(2,'0')}] 来源 ↗</a>`;
   $('#genre-rows').innerHTML=data.genres.map(g=>`<tr><td><b>${esc(g.name)}</b><small>${esc(g.example)}</small></td><td>${esc(g.focus)}</td><td><span class="fit">${esc(g.fit)}</span><br>${esc(g.note)}</td></tr>`).join('');
   $('#theory-cards').innerHTML=data.theories.map(t=>`<article class="card"><div class="meta"><span>${esc(t.kind)}</span>${ref(t.source)}</div><h3>${esc(t.name)}</h3><p>${esc(t.plain)}</p><div class="example">例如：${esc(t.example)}</div><p class="next"><b>用到评测里：</b>${esc(t.use)}</p><p class="limitation">${esc(t.limit)}</p></article>`).join('');
-  $('#scale-cards').innerHTML=data.scales.map(s=>`<article class="card"><div class="meta"><span>玩家自报工具</span>${ref(s.source)}</div><h3>${esc(s.name)} <small>${esc(s.subtitle)}</small></h3><p><b>适合：</b>${esc(s.good)}</p><p>${esc(s.detail)}</p><p class="limitation">${esc(s.caution)}</p><p class="next">${esc(s.choice)}</p></article>`).join('');
+  const originalLinks = v => v.links.map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">${esc(l.label)} ↗</a>`).join('');
+  $('#scale-cards').innerHTML=data.scales.map((s,i)=>`<article class="card scale-card" id="scale-${esc(s.source)}"><div class="meta"><span>玩家自报工具</span>${ref(s.source)}</div><h3>${esc(s.name)} <small>${esc(s.subtitle)}</small></h3><figure class="scale-figure"><button type="button" class="scale-preview" data-scale="${i}" aria-label="放大 ${esc(s.name)} 中文内容图解"><img src="assets/${esc(s.visual.image)}.png" alt="${esc(s.visual.alt)}" width="2400" height="2880" loading="lazy"><span>查看 ${esc(s.name)} 中文内容图解 <b aria-hidden="true">↗</b></span></button><figcaption>依据原始资料自绘；中文题意示例不是正式中文版问卷。</figcaption></figure><p><b>适合：</b>${esc(s.good)}</p><p>${esc(s.detail)}</p><p class="limitation">${esc(s.caution)}</p><details class="scale-transcript"><summary>展开图中文字说明</summary><div class="detail-body"><h4>覆盖哪些方面</h4><ul>${s.visual.dimensions.map(d=>`<li>${esc(d)}</li>`).join('')}</ul><p><b>自拟题意示例：</b>${esc(s.visual.example)}</p><p><b>结果怎么看：</b>${esc(s.visual.reading)}</p></div></details><div class="original-links"><b>原始材料</b>${originalLinks(s.visual)}</div><p class="next">${esc(s.choice)}</p></article>`).join('');
+  const scaleDialog=$('#scale-dialog');
+  $('#scale-cards').addEventListener('click',e=>{
+    const button=e.target.closest('button[data-scale]');if(!button)return;
+    const s=data.scales[Number(button.dataset.scale)],v=s.visual;
+    $('#scale-dialog-title').textContent=s.name+' · 中文内容图解';
+    $('#scale-dialog-image').src='assets/'+v.image+'.png';
+    $('#scale-dialog-image').alt=v.alt;
+    $('#scale-download-png').href='assets/'+v.image+'.png';
+    $('#scale-download-png').download=v.image+'.png';
+    $('#scale-download-svg').href='assets/'+v.image+'.svg';
+    $('#scale-download-svg').download=v.image+'.svg';
+    $('#scale-dialog-sources').innerHTML=originalLinks(v);
+    scaleDialog.showModal();scaleDialog.scrollTop=0;
+  });
+  $('#close-scale-dialog').addEventListener('click',()=>scaleDialog.close());
+  scaleDialog.addEventListener('click',e=>{if(e.target===scaleDialog){const r=scaleDialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)scaleDialog.close();}});
   $('#benchmark-cards').innerHTML=data.benchmarks.map(b=>`<article class="card"><div class="meta"><span>已有工作</span>${ref(b.source)}</div><h3>${esc(b.name)}</h3><p>${esc(b.what)}</p><div class="example"><b>可以借鉴：</b>${esc(b.take)}</div><p class="limitation">${esc(b.gap)}</p></article>`).join('');
   let activeTask=0;
   const drawTask=index=>{

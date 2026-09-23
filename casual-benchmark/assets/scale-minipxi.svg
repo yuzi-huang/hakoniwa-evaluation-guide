@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1440" viewBox="0 0 1200 1440" role="img"><rect width="100%" height="100%" fill="#f6f5ef"/>
+<text x="54" y="55.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="700" fill="#246354">游戏体验研究室   /   量表图解 03</text>
+<text x="54" y="131.52" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="54" font-weight="700" fill="#192d2a">miniPXI</text>
+<text x="54" y="184.52" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="400" fill="#64726b">用更少的题，快速了解这一局的体验</text>
+<rect x="54" y="214" width="1092" height="82" rx="14" fill="#246354"/>
+<text x="82" y="261.28" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#ffffff">11</text>
+<text x="194" y="261.36" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#e4eee5">题项</text>
+<text x="437" y="261.28" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#ffffff">10+1</text>
+<text x="549" y="261.36" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#e4eee5">个方面</text>
+<text x="792" y="261.28" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="700" fill="#ffffff">1</text>
+<text x="904" y="261.36" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#e4eee5">题／方面</text>
+<text x="54" y="355.52" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#192d2a">沿用 PXI 的十个体验方面，每个用 1 题</text>
+<rect x="54" y="389" width="532" height="59" rx="10" fill="white" stroke="#dcded3"/>
+<text x="75" y="425.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#192d2a">控制容易</text>
+<text x="507" y="425.48" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#246354">1 题</text>
+<rect x="54" y="459" width="532" height="59" rx="10" fill="white" stroke="#dcded3"/>
+<text x="75" y="495.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#192d2a">目标清晰</text>
+<text x="507" y="495.48" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#246354">1 题</text>
+<rect x="54" y="529" width="532" height="59" rx="10" fill="white" stroke="#dcded3"/>
+<text x="75" y="565.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#192d2a">挑战适配</text>
+<text x="507" y="565.48" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#246354">1 题</text>
+<rect x="54" y="599" width="532" height="59" rx="10" fill="white" stroke="#dcded3"/>
+<text x="75" y="635.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#192d2a">进度反馈</text>
+<text x="507" y="635.48" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#246354">1 题</text>
+<rect x="54" y="669" width="532" height="59" rx="10" fill="white" stroke="#dcded3"/>
+<text x="75" y="705.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#192d2a">视听吸引力</text>
+<text x="507" y="705.48" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#246354">1 题</text>
+<rect x="614" y="389" width="532" height="59" rx="10" fill="white" stroke="#dcded3"/>
+<text x="635" y="425.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#192d2a">掌握感</text>
+<text x="1067" y="425.48" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#246354">1 题</text>
+<rect x="614" y="459" width="532" height="59" rx="10" fill="white" stroke="#dcded3"/>
+<text x="635" y="495.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#192d2a">好奇心</text>
+<text x="1067" y="495.48" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#246354">1 题</text>
+<rect x="614" y="529" width="532" height="59" rx="10" fill="white" stroke="#dcded3"/>
+<text x="635" y="565.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#192d2a">沉浸</text>
+<text x="1067" y="565.48" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#246354">1 题</text>
+<rect x="614" y="599" width="532" height="59" rx="10" fill="white" stroke="#dcded3"/>
+<text x="635" y="635.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#192d2a">自主感</text>
+<text x="1067" y="635.48" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#246354">1 题</text>
+<rect x="614" y="669" width="532" height="59" rx="10" fill="white" stroke="#dcded3"/>
+<text x="635" y="705.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#192d2a">意义感</text>
+<text x="1067" y="705.48" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#246354">1 题</text>
+<rect x="54" y="771" width="1092" height="107" rx="14" fill="#246354"/>
+<text x="78" y="816.4" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="30" font-weight="700" fill="white">再加 1 题：愉悦感 / Enjoyment</text>
+<text x="78" y="858.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#e4eee5">了解玩家是否享受这次游玩；总计 11 题。</text>
+<text x="54" y="948.76" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#192d2a">内容示意：完整覆盖这些方面，而不是随意挑 11 题</text>
+<text x="54" y="1000.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#64726b">例如关注“想不想知道后续变化”“能不能按自己的方式玩”。每项的正式表达以官方 miniPXI 题</text>
+<text x="54" y="1040.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#64726b">项表为准，作答选项保留所用版本的规定。</text>
+<rect x="54" y="1107" width="1092" height="174" rx="14" fill="#e4eee5"/>
+<text x="79" y="1154.64" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#246354">短局和多版本研究的候选，先试填再决定</text>
+<text x="79" y="1205.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#64726b">分别看各项体验；不把 11 题简单相加当质量排名。单题信息更少，不能默认与完整 PXI 等效，也</text>
+<text x="79" y="1243.52" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#64726b">不能照搬完整版的“三题取均值”。</text>
+<rect x="54" y="1320" width="1092" height="2" rx="0" fill="#dcded3"/>
+<text x="54" y="1358.6" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#64726b">依据原始资料重新绘制 · 中文解释与题意示例仅供讨论，不是正式中文版问卷</text>
+<text x="54" y="1393.84" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#64726b">来源：Haider 等（2022）；PXI 官方 miniPXI English 题项表</text>
+</svg>

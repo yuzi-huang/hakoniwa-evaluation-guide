@@ -127,8 +127,29 @@
       "source": "geq",
       "good": "需要了解心流、能力感、挑战、情绪等体验时。",
       "detail": "2013 英文手册：核心模块 33 题、7 个分量表；In-Game 14 题。另有游戏后与社会存在模块。核心题项使用 0–4 五档，各分量表分别取题项均值。",
-      "caution": "截图中的核心模块漏了“挑战”。Flow 宜理解为心流；操作流畅要另测。社会存在涵盖与真人或虚拟角色的互动，按游戏是否存在这种体验决定是否施测。",
-      "choice": "可作为体验画像。保留版本、模块、题项与施测时点；不把各项直接相加当“好玩总分”。"
+      "caution": "Flow 宜理解为心流；操作流畅要另测。社会存在涵盖与真人或虚拟角色的互动，按游戏是否存在这种体验决定是否施测。",
+      "choice": "可作为体验画像。保留版本、模块、题项与施测时点；不把各项直接相加当“好玩总分”。",
+      "visual": {
+        "image": "scale-geq",
+        "alt": "GEQ 核心模块：33 题、7 维度，0–4 作答，各维度取均值。",
+        "dimensions": [
+          "能力感（5 题）",
+          "感官与想象沉浸（6 题）",
+          "心流（5 题）",
+          "紧张／烦躁（3 题）",
+          "挑战（5 题）",
+          "消极情绪（4 题）",
+          "积极情绪（5 题）"
+        ],
+        "example": "回想这一局，你有多强的“我能玩好”的感觉？",
+        "reading": "七个维度各自取均值。心流不等于操作流畅，挑战越高也不一定越好；不要直接加成好玩总分。",
+        "links": [
+          {
+            "label": "原始问卷与计分手册（PDF）",
+            "url": "https://pure.tue.nl/ws/portalfiles/portal/21666907/Game_Experience_Questionnaire_English.pdf"
+          }
+        ]
+      }
     },
     {
       "name": "PXI",
@@ -137,25 +158,105 @@
       "good": "希望知道问题出在目标、控制、挑战、反馈，还是掌握感与好奇心时。",
       "detail": "完整 PXI 的 10 个构念各有 3 题：5 个直接体验与 5 个心理体验，共 30 题。官方指南采用 -3 至 +3 的七档同意程度，按构念报告。",
       "caution": "完整版本题目较多。自行删除构念、改写或换评分档位后，属于改编工具，不能继续声称与原量表同样经过验证。",
-      "choice": "建议作为详细诊断的候选主量表，并先检查目标中文版本与适用人群。"
+      "choice": "建议作为详细诊断的候选主量表，并先检查目标中文版本与适用人群。",
+      "visual": {
+        "image": "scale-pxi",
+        "alt": "PXI：五个直接体验和五个心理体验，每项三题，核心共30题。",
+        "dimensions": [
+          "直接体验：控制容易、目标与规则、挑战适配、进度反馈、视听吸引力",
+          "心理体验：掌握感、好奇心、沉浸、自主感、意义感"
+        ],
+        "example": "玩家是否能知道，离本关目标还差多少？",
+        "reading": "同一构念的 3 题取均值，分别报告 10 项；正式施测按指南混排题项。图中两列是分类，不表示同行之间一一对应的因果关系。",
+        "links": [
+          {
+            "label": "官方模型与题项",
+            "url": "https://playerexperienceinventory.org/instrument"
+          },
+          {
+            "label": "问卷原版（PDF）",
+            "url": "https://playerexperienceinventory.org/assets/docs/PXI_Questionnaire.pdf"
+          },
+          {
+            "label": "官方使用与计分指南",
+            "url": "https://playerexperienceinventory.org/docs"
+          }
+        ]
+      }
     },
     {
       "name": "miniPXI",
       "subtitle": "短局、多版本比较的候选",
       "source": "minipxi",
       "good": "完整问卷负担过高，需要在短局后快速采集体验时。",
-      "detail": "2022 年研究提出 11 题版本。它有独立的开发与检验过程，可优先评估其在试点中的可用性。",
+      "detail": "2022 年研究提出 11 题版本：PXI 的 10 个体验方面各 1 题，再加 1 题愉悦感（Enjoyment）。有独立的开发与检验过程，可优先评估其在试点中的可用性。",
       "caution": "研究对不同构念的结果并不完全一致；短版不能视为完整 PXI 的等效替代。中文版本、重测与敏感性仍要核查。",
-      "choice": "可与完整 PXI 先做小规模可行性比较；按原文使用，不自行从完整版挑 11 题冒充短版。"
+      "choice": "可与完整 PXI 先做小规模可行性比较；按原文使用，不自行从完整版挑 11 题冒充短版。",
+      "visual": {
+        "image": "scale-minipxi",
+        "alt": "miniPXI：PXI 十个体验方面各一题，再加一题愉悦感，共11题。",
+        "dimensions": [
+          "控制容易、目标清晰、挑战适配、进度反馈、视听吸引力",
+          "掌握感、好奇心、沉浸、自主感、意义感",
+          "另外 1 题：愉悦感（Enjoyment）"
+        ],
+        "example": "是否想知道游戏后面还会发生什么？是否能按自己的方式游玩？",
+        "reading": "每个方面只有 1 题，分别报告各项。官网 PXI 核心为 30 题，miniPXI 的 11 题另含愉悦感；它有专门的题项表，不是从 30 题中随意挑 11 题。作答选项和计分保留所采用版本的规定。",
+        "links": [
+          {
+            "label": "官方 11 题内容（PDF）",
+            "url": "https://playerexperienceinventory.org/assets/docs/miniPXI_English.pdf"
+          },
+          {
+            "label": "官方材料页（含 Word / Excel）",
+            "url": "https://playerexperienceinventory.org/en_m"
+          },
+          {
+            "label": "开发与验证研究",
+            "url": "https://doi.org/10.1145/3549507"
+          }
+        ]
+      }
     },
     {
       "name": "GUESS",
       "subtitle": "整体游戏满意度",
       "source": "guess",
       "good": "评估较完整游戏的多方面满意度时。",
-      "detail": "2016 年原始研究形成 9 个分量表，覆盖多种游戏，适合补充整体满意度视角。",
+      "detail": "2016 年完整 GUESS 为 55 题、9 个分量表，使用 1–7 的七档同意程度，另有 N/A。研究团队另提供 GUESS-18 短版；本卡图解讲的是 55 题完整版。",
       "caution": "叙事或社交等内容可能超出首阶段小原型的范围；选用需考虑内容覆盖和问卷长度。",
-      "choice": "作为后续扩展候选，首轮无需同时堆叠 GEQ、PXI 和 GUESS。"
+      "choice": "作为后续扩展候选，首轮无需同时堆叠 GEQ、PXI 和 GUESS。",
+      "visual": {
+        "image": "scale-guess",
+        "alt": "GUESS 完整版：55题、九个满意度维度，七档同意度，另有不适用选项。",
+        "dimensions": [
+          "可用性／可玩性（11 题）",
+          "叙事（7 题）",
+          "游玩投入（8 题）",
+          "愉悦感（5 题）",
+          "创造自由（7 题）",
+          "音频审美（4 题）",
+          "个人满足（6 题）",
+          "社交连接（4 题）",
+          "视觉审美（3 题）"
+        ],
+        "example": "这里会关注：通关是否让人满足，音乐是否配合游戏，人物和故事是否吸引玩家。",
+        "reading": "完整版 1–7 作答，另有 N/A。第 15 题反向计分后，各维度取均值；完整有效的 9 项均值可相加得到 9–63 综合分。N/A 不记 0，删去维度后不能直接比较完整综合分。",
+        "links": [
+          {
+            "label": "研究团队九维度原图与介绍",
+            "url": "https://www.ruxresearch.com/the-guess"
+          },
+          {
+            "label": "研究团队图示概览（PDF）",
+            "url": "https://www.ruxresearch.com/_files/ugd/c357c3_bf283ea703404cefa88248e1cc11611d.pdf"
+          },
+          {
+            "label": "完整问卷与计分（含 GUESS-18）",
+            "url": "https://www.ruxresearch.com/_files/ugd/c357c3_06d8d7c0416c439ebbf7f25c3c1971c5.pdf"
+          }
+        ]
+      }
     }
   ],
   "benchmarks": [
@@ -502,16 +603,18 @@
       "year": "2022",
       "type": "短量表研究 · 已核对摘要与项目书目",
       "url": "https://doi.org/10.1145/3549507",
-      "note": "11 题；研究摘要报告不同构念的结果存在差异，不把短版视为完整版等效替代。"
+      "note": "研究摘要、官方书目与英文 11 题表已核对：10 个体验方面各 1 题，另加愉悦感。短版不自动等同完整版，中文版本与试点敏感性仍需核查。",
+      "extra": "https://playerexperienceinventory.org/en_m"
     },
     {
       "id": "guess",
       "title": "The Development and Validation of the Game User Experience Satisfaction Scale (GUESS)",
       "authors": "Phan, Keebler & Chaparro",
       "year": "2016",
-      "type": "量表研究 · 已核对摘要",
+      "type": "量表原始研究 · 摘要及研究团队问卷／计分说明已核对",
       "url": "https://doi.org/10.1177/0018720816669646",
-      "note": "9 个分量表，提供整体满意度视角；首阶段仍需检查适用范围与负担。"
+      "note": "完整 GUESS 为 55 题、9 个分量表；团队材料另含 GUESS-18。图解为独立中文说明；正式问卷按原版及其许可使用。",
+      "extra": "https://www.ruxresearch.com/the-guess"
     },
     {
       "id": "mda",

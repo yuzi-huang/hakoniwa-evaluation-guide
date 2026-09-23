@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="面向真实游戏开发的休闲游戏体验 Benchmark 共建提案：候选品类、理论与量表、开发任务、评分标准和评测流程。">
+  <meta name="theme-color" content="#153e38"><title>休闲游戏体验 Benchmark · 共建提案</title>
+  <link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<header class="topbar"><a class="brand" href="#overview"><span class="brand-mark">◈</span><span>游戏体验研究室<small>CASUAL GAME BENCHMARK</small></span></a><div class="top-actions"><a href="../" class="quiet-link">箱庭八维指南 ↗</a><button class="text-button" id="copy-link">分享本页</button><a class="button small" href="#scorecard">打开评审表</a></div></header>
+<div class="shell">
+<aside class="sidebar" aria-label="页面导航"><div class="side-kicker">第一阶段 · 共建草案</div><nav>
+<a href="#overview">00 <span>先明确我们要测什么</span></a><a href="#genres">01 <span>选择休闲游戏品类</span></a><a href="#theory">02 <span>理论与开发实践</span></a><a href="#scales">03 <span>GEQ 与量表怎么选</span></a><a href="#benchmarks">04 <span>已有 Benchmark 可借鉴什么</span></a><a href="#tasks">05 <span>试点任务怎么出</span></a><a href="#rubrics">06 <span>八条具体评分标准</span></a><a href="#process">07 <span>评测怎么跑</span></a><a href="#pilot">08 <span>第一轮共建安排</span></a><a href="#scorecard">09 <span>填写与导出评审表</span></a><a href="#sources">10 <span>来源与适用边界</span></a>
+</nav><div class="side-note">v0.1 · 2026.09.23<br>品类与任务待共同确认。<br>评分锚点待试点校准。</div></aside>
+<main id="main">
+<section id="overview" class="hero">
+  <div class="eyebrow"><span class="dot"></span>面向真实游戏开发的体验评测</div>
+  <h1>休闲游戏体验<br><span>Benchmark 共建提案</span></h1>
+  <p class="hero-intro">我们想知道：模型能否做出容易上手、值得琢磨的游戏，也能根据试玩反馈，把已有版本改得更好。</p>
+  <div class="hero-bottom"><p>先从单人、短局、能够完成一轮玩法的休闲品类开始。把开发任务、可观察的玩法、玩家感受放在一起讨论。</p><a href="#genres" class="button">从选择品类开始 <span>↓</span></a></div>
+  <div class="summary-strip"><div><strong>10</strong><span>候选休闲类型</span></div><div><strong>3</strong><span>类真实开发任务</span></div><div><strong>8</strong><span>条体验评分标准</span></div><div><strong>4</strong><span>种相互补充的证据</span></div></div>
+</section>
+<div class="opening-grid"><article class="note-card"><span class="label">评测对象</span><h3>模型与开发流程的产出</h3><p>比较在相同需求、工程、素材与资源预算下，完成和迭代游戏的能力。人类玩家用于检验体验；自动玩家用于寻找失效情况与辅助验证。</p></article><article class="note-card"><span class="label">第一阶段的范围</span><h3>先把一小段体验做扎实</h3><p>候选范围为单人短局、完整的开始与结束、可复现关卡。平台与品类待确认。广告、付费和长线运营可在后续独立设题。</p></article></div>
+<div class="takeaway"><strong>建议先形成一张体验画像。</strong><p>分别报告“是否做对”“玩法为什么成立”“玩家实际感受”和“证据还缺什么”。等题目和评分有了共识，再讨论汇总排名。</p></div>
+
+<section id="genres"><div class="section-heading"><div><span class="section-number">01 / SCOPE</span><h2>先选哪类休闲游戏？</h2></div><p>同样是休闲，排序的规划、动作的手感、经营的长期选择，需要不同的观察方法。</p></div>
+<div class="recommend"><strong>建议优先讨论：整理／规则解谜 + 轻动作</strong><p>前者适合看规则理解、规划与解法学习；后者适合看操作反馈、危险判断和熟练进步。消除／合成适合作为另一组候选，需多控制随机性。</p><span class="pill">这是选题建议，尚未确定试点品类</span></div>
+<div class="table-wrap"><table><thead><tr><th>类型与玩法例子</th><th>重点看什么</th><th>试点考虑</th></tr></thead><tbody id="genre-rows"></tbody></table></div>
+<p class="endnote"><b>下一步要做：</b>从这里选 1–2 类，约定目标玩家、平台、局长与输入方式。触屏和键鼠可以分轨测试，结果保留各自条件。</p></section>
+
+<section id="theory"><div class="section-heading"><div><span class="section-number">02 / FOUNDATIONS</span><h2>哪些理论能落到设计上？</h2></div><p>用它们提出问题和解释现象。具体评分仍要结合品类和试玩证据。</p></div>
+<div class="causal-chain"><div><small>规则</small><strong>合并同类物件</strong></div><span>→</span><div><small>玩家行为</small><strong>为后续保留空位</strong></div><span>→</span><div><small>体验</small><strong>计划成功的满足</strong></div></div>
+<p class="caption">以 MDA 为例：从功能一路追到玩家实际做出的判断，才能讨论这个功能是否带来了期望的体验。</p>
+<div id="theory-cards" class="two-columns"></div>
+<div class="takeaway"><strong>这里把“深度”理解为：熟悉以后还有值得学、值得判断的东西。</strong><p>解谜可以是更好的规划，动作可以是时机与路线的掌握，消除可以是目标和未来局面的取舍。机制多、按键多、玩得久，都不能单独证明深度。</p></div></section>
+
+<section id="scales"><div class="section-heading"><div><span class="section-number">03 / MEASUREMENT</span><h2>GEQ 可以用，怎样用才合适？</h2></div><p>量表回答玩家有什么感受；专家与行为记录帮助找到产生这些感受的设计原因。</p></div>
+<div class="geq-note"><div><span class="label">对你提供的量表图做两处补充</span><h3>核心模块有 7 项，Flow 指心流</h3><p>GEQ 核心模块包括能力感、感官与想象沉浸、心流、紧张／烦躁、挑战、消极情绪和积极情绪。图中少了挑战；“心流”也不能代替操作流畅性的检查。<a href="#source-geq">[GEQ 原始手册]</a></p></div><div class="constructs"><span>能力感</span><span>沉浸</span><span>心流</span><span>紧张／烦躁</span><span class="accent">挑战</span><span>消极情绪</span><span>积极情绪</span></div></div>
+<div id="scale-cards" class="two-columns"></div>
+<div class="decision-note"><h3>建议的选法</h3><p><b>详细诊断轮：</b>优先讨论完整 PXI，容易与目标、控制、反馈和掌握感对应。<b>短局比较轮：</b>先验证 miniPXI 的问卷负担与敏感性。团队熟悉 GEQ 时也可以继续使用，但保持明确版本与模块。</p><p>正式使用中文问卷前，要核查已有中文版本的来源和适用性；自行翻译或改题后，先做理解访谈和必要检验，并标注为试用或改编版本。保留原量表的用法，另加游戏问题，分别报告。</p></div>
+<details><summary>试点访谈可以先问什么？<span>这些是自拟问题，不是 GEQ／PXI 正式题项</span></summary><div class="detail-body"><ol><li>刚才哪一步最需要你判断？你为什么这么做？</li><li>有没有一次失败，你知道下次可以怎样调整？</li><li>如果现在再给你一局，你想不想继续？主要原因是什么？</li><li>如果只改一个地方，什么最能改善这次体验？</li></ol><p>这些问题用于解释行为与发现问题，不计算心理量表分数。意愿、实际选择和长期留存分别记录。</p></div></details>
+<p class="endnote"><b>下一步要做：</b>选一个主要体验工具，先检查玩家是否理解题意、填写是否打断体验，再把它与录像和行为记录对照。</p></section>
+
+<section id="benchmarks"><div class="section-heading"><div><span class="section-number">04 / RELATED WORK</span><h2>已有 Benchmark，能借鉴哪一部分？</h2></div><p>开发任务、智能体游玩、玩家体验是不同的评价对象。先分清对象，再组合方法。</p></div><div id="benchmark-cards" class="two-columns"></div>
+<div class="takeaway"><strong>我们可以补充的部分：从“按要求做出来”，继续追到“玩家是否获得预期体验”。</strong><p>尤其值得做修改题：给出能玩的版本和试玩反馈，让模型提出修改、做出修改、验证改进，并保留原有功能。</p></div></section>
+
+<section id="tasks"><div class="section-heading"><div><span class="section-number">05 / TASK DESIGN</span><h2>把试点做成真实的开发任务</h2></div><p>三类任务分别评。先不要让一个大而全的生成题承担所有结论。</p></div>
+<div class="three-columns task-types"><article><span class="step-index">A</span><h3>把核心玩法做对</h3><p>给明确规则、起始工程和素材，完成可玩的循环。重点看需求理解、实现和基础可用性。</p></article><article><span class="step-index">B</span><h3>把已有玩法做深</h3><p>给稳定版本，在相同内容预算下设计关卡和进程。重点看学习、选择、技巧与变化。</p></article><article><span class="step-index">C</span><h3>根据试玩反馈迭代</h3><p>给录像、问题记录和既有功能，要求修改并验证。重点看改善是否对应问题、有没有引入退步。</p></article></div>
+<div class="tabs" role="tablist" aria-label="候选试点任务" id="task-tabs"></div><div id="task-panel" role="tabpanel" tabindex="0"></div>
+<details><summary>一份任务单必须交代什么？<span>避免模型与评委各自猜需求</span></summary><div class="detail-body"><div class="two-columns"><div><h4>给开发者的信息</h4><ul><li>目标玩家、品类、平台、局长、输入方式。</li><li>起始工程版本、素材、规则和允许修改的范围。</li><li>时间、调用／token、工具与素材预算，是否允许联网。</li><li>需要交付的可玩版本、修改说明、验证记录。</li><li>本任务启用的评分维度，以及明确的成功条件。</li></ul></div><div><h4>由评测方保留的信息</h4><ul><li>符合已公布规则的额外盘面与边界情境。</li><li>独立运行的检查器、日志、随机序列和版本标识。</li><li>玩家招募条件、主持流程、评分和仲裁方法。</li><li>不能向开发者泄露的参考答案与完整留出集合。</li><li>等价实现的接受范围，避免只匹配参考实现写法。</li></ul></div></div><p>隐藏的是测试实例与答案，验收要求本身应公开。若任务依赖未交代的要求，应修题再比较。</p></div></details>
+<p class="endnote"><b>下一步要做：</b>每个入选品类各做一份参考实现和一份问题版本，确认题目能做、能测、改进也确实能被观察到。</p></section>
+
+<section id="rubrics"><div class="section-heading"><div><span class="section-number">06 / RUBRICS</span><h2>八条可以拿着试玩的评分标准</h2></div><p>这是本提案自拟的专家 rubric，借鉴上述研究，但不是已验证心理量表。需要用实际作品校准。</p></div>
+<div class="rating-key"><span><b>0</b> 明显失效</span><span><b>1</b> 问题突出</span><span><b>2</b> 基本成立</span><span><b>3</b> 表现清楚</span><span><b>4</b> 经更多情境验证</span></div>
+<p class="caption">以每条具体锚点为准。U＝证据不足，N/A＝任务不适用。两者都不是 0 分；没有观察到高分条件时，不根据印象补分。</p>
+<div id="rubric-cards"></div>
+<div class="decision-note"><h3>先划清边界，避免同一问题重复扣分</h3><p>“按了没有反应”主要记 R2；“不知道为什么不让按”记 R1；“按键文字被特效遮住”主要记 R8，其他受影响维度写关联说明。R4 的策略与技巧按品类选择证据，叙事、社交与长期经济可作为后续模块。</p><p>0–4 是有序等级。首轮报告各项分布、关键片段和分歧；若需要总分，应先确定适用维度与权重，并检查换一组合理权重会不会改变排名。</p></div>
+<a class="button secondary" id="download-rubrics" href="#">下载评分标准 CSV ↓</a></section>
+
+<section id="process"><div class="section-heading"><div><span class="section-number">07 / PROTOCOL</span><h2>评测分四步，证据各有用途</h2></div><p>四类证据分别是程序检查结果、专家观察、真人行为记录和玩家自报感受。模型裁判辅助整理与提出建议。</p></div>
+<div class="process-list">
+<article><span class="step-index">1</span><div><h3>先检查能否公平地试玩</h3><p>统一设备与输入条件，检查启动、核心规则、成功／失败、暂停、重开和任务要求的恢复方式。关键流程被阻断的提交保留在结果里，注明阻断原因；后续体验记为无法观察。</p><p class="micro">报告全部提交的可运行比例，同时单独报告可运行版本的体验，防止只挑成功作品造成偏差。</p></div></article>
+<article><span class="step-index">2</span><div><h3>两位评委独立试玩，按锚点写证据</h3><p>用匿名版本，先独立打分，再讨论分歧。每项留下局面／时间、玩家或评委做了什么、结果、为什么对应这个锚点。差异较大的项目由第三人复核，保留原始评分。</p><p class="micro">需求检查员可以读任务单和代码；体验评委先看正常游戏界面与同等操作说明，避免开发者自述预先影响判断。</p></div></article>
+<article><span class="step-index">3</span><div><h3>让目标玩家在相同条件下玩</h3><p>新玩家先无额外帮助完成约定试玩，再填选定量表、回看关键片段。主持人不临场教学；必须帮助时记录时间与内容。修改前后尽量使用不同的新玩家，或平衡版本顺序并分析学习影响。</p><p class="micro">建议观察窗口为每版约 8–12 分钟、每人至多 2–3 版，具体由玩法与疲劳情况调整；这属于试点安排，不是行业标准。</p></div></article>
+<article><span class="step-index">4</span><div><h3>把分数、行为和玩家解释放在一起</h3><p>同品类、同任务类型内比较。报告分数分布、样本数、完成／失败原因及代表片段。模型裁判可以找片段、整理事件、提出评分建议；先与人工标注对齐，主观乐趣仍由真人反馈支持。</p><p class="micro">首次人工协助前的表现和协助后的表现分开。量表按原构念计分；不把胜率、问卷、时长直接相加。</p></div></article></div>
+<div class="table-wrap"><table><thead><tr><th>记录什么</th><th>能帮助回答</th><th>解释时要留意</th></tr></thead><tbody>
+<tr><td>首次有效操作、无效尝试、求助</td><td>是否能独立开始，在哪里误解规则</td><td>探索性尝试也可能是主动学习，需结合回看解释</td></tr>
+<tr><td>相同局面下的选择、练习后的表现</td><td>判断与技巧是否有成长空间</td><td>进步可能来自熟悉地图；用保留局面验证迁移</td></tr>
+<tr><td>提示、撤销、失败、重开</td><td>失败是否可理解，恢复是否合理</td><td>高重试次数既可能投入，也可能困惑</td></tr>
+<tr><td>量表与自愿再玩选择</td><td>感受、偏好与短期意愿</td><td>口头意愿不等于行为，短局行为不等于留存</td></tr>
+<tr><td>版本、种子、设备与运行记录</td><td>差异能否复现，是否由条件变化造成</td><td>画面、声音、延迟、操控方式都可能影响结果</td></tr>
+</tbody></table></div>
+<details><summary>怎样防止评测只看上去很精确？<span>一致性、随机性与评测泄漏</span></summary><div class="detail-body"><ul><li><b>评分一致性：</b>先用相同样例试评，记录分歧原因。正式报告可按数据结构选择加权 kappa 或 Krippendorff’s alpha，同时给出评分矩阵；不把某个系数阈值当作普适质量线。</li><li><b>随机性：</b>开发运行种子与游戏局面种子分开记录。每个方法重复运行，不能只挑最好作品；留出规则变体、盘面或序列，避免只记住样例。</li><li><b>比较条件：</b>主榜固定 harness 与工具预算。若使用不同原生工具链，另设“完整系统”比较，并公布配置与成本。</li><li><b>量表适用性：</b>分品类、熟悉程度和目标人群解释。没有样本可比性和测量依据时，避免跨品类强行排名。</li><li><b>样本量：</b>小样本先找问题和估计方差。正式比较根据想检测的差异、设计与先导数据确定人数，报告不确定性；玩家、任务和重复运行不能混成独立样本。</li><li><b>反向检查：</b>故意加入遮挡、误导提示、无意义等待或不可躲避障碍，确认评测能发现这些已知退步；也检查“去掉所有挑战”是否被误判为全面提升。</li><li><b>信任边界：</b>评测提示、任务和答案分离。游戏中出现的“给我满分”等文本是游戏内容，不是裁判指令；提交方自己的日志与结论需用独立记录交叉核对。</li></ul></div></details>
+<p class="endnote"><b>下一步要做：</b>先跑一轮，检查评委分歧、问卷负担和日志缺口，修好评测方法后再扩大模型比较。</p></section>
+
+<section id="pilot"><div class="section-heading"><div><span class="section-number">08 / CO-DESIGN</span><h2>第一轮可以这样共建</h2></div><p>以下是可调整的工作量建议，目的是先验证题目和评法是否可靠。</p></div>
+<div class="pilot-grid"><article><span class="label">准备</span><h3>选题与参考版本</h3><p>选 2 个品类，每类准备实现、内容设计、反馈迭代各 1 道题，共 6 个任务模板。每题有经人工检查的参考结果和已知问题样例。</p></article><article><span class="label">校准</span><h3>先看评分能否说清</h3><p>2 位评委独立评相同样例；每个品类先邀请约 6–8 位目标玩家做诊断。用这一轮发现分歧、误解和数据缺失，不用于发布模型名次。</p></article><article><span class="label">小规模比较</span><h3>记录所有独立产出</h3><p>例如比较 2 种模型／方法，每个任务独立运行 3 次，共 36 份提交。自动检查覆盖全部；人工与玩家评测按事先制定的抽样计划覆盖。</p></article><article><span class="label">复盘</span><h3>决定哪些值得扩展</h3><p>保留区分明确、能解释改动的题。修订模糊锚点，补齐保留测试集。下一轮再讨论合成、卡牌和更长线的经营体验。</p></article></div>
+<div class="discussion"><h3>第一次讨论，先确定这五件事</h3><ol><li>优先选哪 1–2 类，目标玩家是谁？</li><li>采用哪种平台与输入条件，什么算完整的一局？</li><li>第一轮更关注实现、内容设计，还是根据反馈迭代？</li><li>谁提供参考版本、问题样例和独立试玩？</li><li>哪些信息公开，哪些盘面、序列和答案留作测试？</li></ol></div>
+<p class="endnote"><b>本轮应交付：</b>任务包、参考与问题样例、rubric v0.2、匿名证据记录，以及哪些结论仍然不能下的清单。</p></section>
+
+<section id="scorecard"><div class="section-heading"><div><span class="section-number">09 / REVIEW WORKSHEET</span><h2>拿一款游戏，试填一次</h2></div><p>填写内容仅保存在本机浏览器。导出后可以带回团队讨论，不会自动同步给他人。</p></div>
+<form id="review-form"><div class="form-grid"><label>作品／版本编号<input name="build" placeholder="例如：SORT-C / version-02" maxlength="120"></label><label>评审者代号<input name="reviewer" placeholder="例如：reviewer-A" maxlength="60"></label><label>品类<select name="genre" id="review-genre"></select></label><label>任务类型<select name="task"><option value="">请选择</option><option>实现核心玩法</option><option>设计内容与进程</option><option>根据反馈迭代</option><option>其他／待确定</option></select></label><label>设备／输入条件<input name="device" placeholder="设备、分辨率、键鼠或触屏" maxlength="200"></label><label>基础运行检查<select name="gate"><option value="unchecked">未检查</option><option value="pass">已通过约定检查</option><option value="blocked">存在阻断问题</option></select></label></div><label>本次覆盖与运行情况<textarea name="coverage" rows="3" placeholder="起始状态、玩了哪些关、种子／序列、是否得到帮助；有阻断时写清原因。"></textarea></label><div id="review-items"></div><label>本次最应优先修改的一件事<textarea name="priority" rows="3" placeholder="写具体发生了什么、为什么影响体验、建议改哪里。"></textarea></label><div class="form-actions"><button type="button" id="export-review" class="button">导出评审记录 JSON ↓</button><button type="button" id="copy-review" class="button secondary">复制文字摘要</button><span id="save-state" role="status">尚未填写</span></div><p class="caption">0–4 分须附证据；N/A 须说明不适用原因；U 留待补测。表单只记录专家评审，不计算 GEQ 或 PXI 分数。</p></form>
+<details id="export-preview" hidden><summary>评审记录已生成<span>如果浏览器未开始下载，也可以复制这里的内容保存。</span></summary><div class="detail-body"><label>JSON 记录内容<textarea id="export-json" rows="12" readonly spellcheck="false"></textarea></label><button type="button" class="button secondary" id="copy-json">复制 JSON 记录</button></div></details>
+</section>
+
+<section id="sources"><div class="section-heading"><div><span class="section-number">10 / REFERENCES</span><h2>来源、版本与适用边界</h2></div><p>资料核对日期：2026 年 9 月 23 日。研究、实践指南与本提案建议在页面中分别标注。</p></div><div id="source-list"></div>
+<div class="takeaway"><strong>这份页面是一份可以开始试跑的共建草案。</strong><p>具体任务、八条专家评分、人数与工作量均是本提案建议，尚未经过本项目的实测验证。后续应保留版本号、修改原因和校准样例。</p></div></section>
+<footer><span>游戏体验研究室 · 休闲游戏 Benchmark v0.1</span><a href="#overview">回到顶部 ↑</a></footer>
+</main></div><div id="toast" role="status" aria-live="polite"></div>
+</body></html>
